@@ -6,6 +6,8 @@ function Text(props) {
     fontSize: props.size || "14px",
   };
 
+  const text = props.text || "";
+
   return <p style={style}>{text}</p>;
 }
 
