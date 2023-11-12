@@ -11,7 +11,7 @@ function Tools(props) {
       <Button className="key" value="style the text" onClick={displayMenu} />
       <div style={props.menu ? { display: "block" } : { display: "none" }}>
         <h2>Styling tools</h2>
-        <Size sizes={props.size} setSize={props.setSize} />
+        <Size size={props.size} setSize={props.setSize} />
         <Color setColor={props.setColor} />
       </div>
     </>

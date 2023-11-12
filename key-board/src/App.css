@@ -40,3 +40,18 @@
 .read-the-docs {
   color: #888;
 }
+
+/* body {
+  background-color: rgb(233, 215, 233);
+}
+
+.textBox {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  width: 80%;
+  height: 20vh;
+  overflow-x: auto;
+  margin: auto;
+  border-radius: 4%;
+} */
