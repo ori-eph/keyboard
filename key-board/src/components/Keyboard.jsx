@@ -3,6 +3,7 @@ import "../css/keyboard.css";
 import Language from "./Language";
 import Keys from "./Keys";
 import UpperLower from "./UpperLower";
+import Special from "./Special";
 
 function Keyboard(props) {
   const currentLang = props.lang || "eng";
@@ -10,6 +11,7 @@ function Keyboard(props) {
     <>
       <UpperLower setUpper={props.setUpper} upper={props.upper} />
       <Language currentLang={currentLang} setLang={props.setLang} />
+      <Special setText={props.setText} />
       <Keys
         color={props.color}
         size={props.size}
