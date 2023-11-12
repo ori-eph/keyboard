@@ -1,0 +1,14 @@
+#keyboard-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+  gap: 0.5vw;
+}
+
+.key {
+  flex: 0 0 calc(100% / 8);
+  border: 1.5px solid rgb(138, 128, 128);
+}

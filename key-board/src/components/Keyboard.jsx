@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { lang } from "../data";
 import Button from "./Button";
+import "../css/keyboard.css";
 
 function Keyboard(props) {
   function findLangChars(currentLang) {
@@ -22,6 +23,7 @@ function Keyboard(props) {
         key={`key-${char}`}
         onClick={() => onKeyClick(setText, char)}
         value={char}
+        className="key"
       ></Button>
     ));
     return keyboard;
