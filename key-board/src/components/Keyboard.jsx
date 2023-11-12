@@ -8,7 +8,7 @@ let count = 0;
 function Keyboard(props) {
   const style = {
     color: props.color || "black",
-    fontSize: props.size + "px" || "14px",
+    fontSize: props.size + "px" || "18px",
   };
 
   function findLangChars(currentLang) {
