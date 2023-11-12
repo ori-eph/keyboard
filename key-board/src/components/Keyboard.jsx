@@ -9,7 +9,7 @@ function Keyboard(props) {
   const moreChars = [",", "space", "."];
   const style = {
     color: props.color || "black",
-    fontSize: props.size + "px" || "14px",
+    fontSize: props.size + "px" || "18px",
   };
 
   function findLangChars(currentLang) {
