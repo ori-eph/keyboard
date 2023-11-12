@@ -6,7 +6,7 @@ function Text(props) {
     fontSize: props.size || "14px",
   };
 
-  return <p style={style}>{text}</p>;
+  return <p style={style}>{text}</p>; //hi
 }
 
 export default Text;
