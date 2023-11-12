@@ -18,11 +18,10 @@ function App() {
       <p>{`${size}, ${color}`}</p>
       <Keyboard
         setText={setText}
-        lang="emoj"
+        lang="eng"
         color={color}
         size={size}
       ></Keyboard>
-      <
     </>
   );
 }
