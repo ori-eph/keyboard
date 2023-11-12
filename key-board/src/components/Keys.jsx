@@ -7,7 +7,7 @@ import Language from "./Language";
 let count = 0;
 
 function Keys(props) {
-  const moreChars = [",", "space", "."];
+  const moreChars = [",", "space", ".", "⌫"];
   const style = {
     color: props.color || "black",
     fontSize: props.size + "px" || "18px",
@@ -22,7 +22,9 @@ function Keys(props) {
   }
 
   function onKeyClick(setText, char) {
-    if (char !== "space") {
+    if (char === "⌫") {
+      setText((prev) => [...prev].slice(0, -1));
+    } else if (char !== "space") {
       setText((prevText) => [
         ...prevText,
         <span key={`${count}-${char}`} style={style}>
