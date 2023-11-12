@@ -6,16 +6,23 @@ import Keyboard from "./components/Keyboard";
 import Text from "./components/Text";
 
 function App() {
-  const [text, setText] = useState("");
+  const [text, setText] = useState([]);
   const [color, setColor] = useState("black");
   const [size, setSize] = useState("14px");
 
   return (
     <>
-      <Text text={text} />
+      <Text color={color} size={size} text={text} />
+      <Color changeColor={setColor} />
       <Size changeSize={setSize} />
-      <p>{size}</p>
-      <Keyboard setText={setText} lang="emoj"></Keyboard>
+      <p>{`${size}, ${color}`}</p>
+      <Keyboard
+        setText={setText}
+        lang="emoj"
+        color={color}
+        size={size}
+      ></Keyboard>
+      <
     </>
   );
 }

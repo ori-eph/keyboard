@@ -2,7 +2,14 @@ import { useState } from "react";
 import { lang } from "../data";
 import Button from "./Button";
 
+let count = 0;
+
 function Keyboard(props) {
+  const style = {
+    color: props.color || "black",
+    fontSize: props.size + "px" || "14px",
+  };
+
   function findLangChars(currentLang) {
     for (const key in lang) {
       if (key === currentLang) {
@@ -12,8 +19,14 @@ function Keyboard(props) {
   }
 
   function onKeyClick(setText, char) {
-    console.log(char);
-    setText((prevText) => (prevText += char));
+    setText((prevText) => [
+      ...prevText,
+      <span key={`${count}-${char}`} style={style}>
+        {char}
+      </span>,
+    ]);
+    count++;
+    console.log(count);
   }
 
   function getKeyboard(chars, setText) {
