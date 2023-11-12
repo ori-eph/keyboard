@@ -18,6 +18,7 @@
   border: 1.5px solid rgb(138, 128, 128);
 }
 
-# -key {
-  width: 200px;
+.space {
+  height: 2.5em;
+  flex: 0 0 50%;
 }

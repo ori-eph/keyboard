@@ -17,9 +17,9 @@ function App() {
       <Text color={color} size={size} text={text} />
       <Color changeColor={setColor} />
       <Size changeSize={setSize} size={size} />
-      <Language currentLang={lang} setLang={setLang} />
       <Keyboard
         setText={setText}
+        setLang={setLang}
         lang={lang}
         color={color}
         size={size}
