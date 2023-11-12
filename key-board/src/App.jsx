@@ -1,10 +1,8 @@
 import { useState } from "react";
 import "./App.css";
-import Color from "./components/Color";
-import Size from "./components/Size";
 import Keyboard from "./components/Keyboard";
 import Text from "./components/Text";
-import Language from "./components/Language";
+import Tools from "./components/Tools";
 
 function App() {
   const [text, setText] = useState([]);
@@ -12,12 +10,11 @@ function App() {
   const [size, setSize] = useState(18);
   const [lang, setLang] = useState("eng");
   const [upper, setUpper] = useState(false);
+  const [menu, setMenu] = useState(false);
 
   return (
     <>
       <Text color={color} size={size} text={text} />
-      <Color changeColor={setColor} />
-      <Size changeSize={setSize} size={size} />
       <Keyboard
         setText={setText}
         setUpper={setUpper}
@@ -27,6 +24,13 @@ function App() {
         size={size}
         upper={upper}
       ></Keyboard>
+      <Tools
+        setColor={setColor}
+        setSize={setSize}
+        size={size}
+        menu={menu}
+        setMenu={setMenu}
+      />
     </>
   );
 }

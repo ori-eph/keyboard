@@ -1,10 +1,10 @@
 export default function Color(props) {
   function handleColorChange(e) {
-    props.changeColor(e.target.value);
+    props.setColor(e.target.value);
   }
   return (
     <div className="color">
-      <label htmlFor="color-picker">color:</label>
+      <label htmlFor="color-picker">Text color:</label>
       <input
         onChange={(e) => {
           handleColorChange(e);

@@ -12,6 +12,7 @@ function UpperLower(props) {
     <Button
       value={props.upper ? symbol.upper : symbol.lower}
       onClick={handleUpperLower}
+      className="key"
     />
   );
 }

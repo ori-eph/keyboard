@@ -77,7 +77,7 @@ function Keys(props) {
     return more;
   }
 
-  const currentLang = props.lang || "eng";
+  const currentLang = props.isSpecial ? "specialChars" : props.lang;
   const chars = findLangChars(currentLang);
   const keyboard = getKeyboard(chars, props.setText);
   const spaceLine = getSpaceLine(props.setText);

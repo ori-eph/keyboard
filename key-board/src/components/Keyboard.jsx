@@ -6,16 +6,23 @@ import UpperLower from "./UpperLower";
 
 function Keyboard(props) {
   const currentLang = props.lang || "eng";
+  const [isSpecial, setIsSpecial] = useState(false);
   return (
     <>
       <UpperLower setUpper={props.setUpper} upper={props.upper} />
-      <Language currentLang={currentLang} setLang={props.setLang} />
+      <Language
+        currentLang={currentLang}
+        setLang={props.setLang}
+        isSpecial={isSpecial}
+        setIsSpecial={setIsSpecial}
+      />
       <Keys
         color={props.color}
         size={props.size}
         lang={currentLang}
         setText={props.setText}
         upper={props.upper}
+        isSpecial={isSpecial}
       />
     </>
   );
