@@ -16,7 +16,7 @@ function Special(props) {
     );
   }
   function clearText() {
-    props.setText((prev) => []);
+    props.setText(() => []);
   }
   return (
     <div>

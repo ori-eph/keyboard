@@ -23,21 +23,33 @@ function Keys(props) {
 
   function onKeyClick(setText, char) {
     if (char === "⌫") {
-      setText((prev) => [...prev].slice(0, -1));
+      props.setReturnArr((prev) => [
+        ...prev,
+        { action: "delete", deletedText: props.text[props.text.length - 1] },
+      ]);
+      setText((prev) => {
+        return [...prev].slice(0, -1);
+      });
     } else if (char !== "space") {
-      setText((prevText) => [
-        ...prevText,
-        <span key={`${count}-${char}`} style={style}>
-          {char}
-        </span>,
-      ]);
+      props.setReturnArr((prev) => [...prev, { action: "add" }]);
+      setText((prevText) => {
+        return [
+          ...prevText,
+          <span key={`${count}-${char}`} style={style}>
+            {char}
+          </span>,
+        ];
+      });
     } else {
-      setText((prevText) => [
-        ...prevText,
-        <span key={`${count}-space`} style={style}>
-          &nbsp;
-        </span>,
-      ]);
+      setText((prevText) => {
+        props.setReturnArr((prev) => [...prev, { action: "add" }]);
+        return [
+          ...prevText,
+          <span key={`${count}-space`} style={style}>
+            &nbsp;
+          </span>,
+        ];
+      });
     }
     count++;
   }

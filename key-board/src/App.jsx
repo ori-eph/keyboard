@@ -19,6 +19,7 @@ function App() {
         setText={setText}
         setUpper={setUpper}
         setLang={setLang}
+        text={text}
         lang={lang}
         color={color}
         size={size}
