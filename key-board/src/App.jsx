@@ -11,6 +11,7 @@ function App() {
   const [color, setColor] = useState("black");
   const [size, setSize] = useState(18);
   const [lang, setLang] = useState("eng");
+  const [upper, setUpper] = useState(false);
 
   return (
     <>
@@ -19,10 +20,12 @@ function App() {
       <Size changeSize={setSize} size={size} />
       <Keyboard
         setText={setText}
+        setUpper={setUpper}
         setLang={setLang}
         lang={lang}
         color={color}
         size={size}
+        upper={upper}
       ></Keyboard>
     </>
   );

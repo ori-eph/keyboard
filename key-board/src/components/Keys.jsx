@@ -41,14 +41,22 @@ function Keys(props) {
   }
 
   function getKeyboard(chars, setText) {
-    const keyboard = chars.map((char) => (
-      <Button
-        key={`key-${char}`}
-        onClick={() => onKeyClick(setText, char)}
-        value={char}
-        className="key"
-      ></Button>
-    ));
+    const keyboard = chars.map((char) => {
+      let charFixed =
+        props.lang === "eng"
+          ? props.upper
+            ? char.toUpperCase()
+            : char.toLowerCase()
+          : char;
+      return (
+        <Button
+          key={`key-${char}`}
+          onClick={() => onKeyClick(setText, charFixed)}
+          value={charFixed}
+          className="key"
+        ></Button>
+      );
+    });
     return keyboard;
   }
 
