@@ -11,6 +11,7 @@ function App() {
   const [lang, setLang] = useState("eng");
   const [upper, setUpper] = useState(false);
   const [menu, setMenu] = useState(false);
+  const [rgbOn, setRgbOn] = useState(false);
 
   return (
     <>
@@ -19,11 +20,13 @@ function App() {
         setText={setText}
         setUpper={setUpper}
         setLang={setLang}
+        setRgbOn={setRgbOn}
         text={text}
         lang={lang}
         color={color}
         size={size}
         upper={upper}
+        rgbOn={rgbOn}
       ></Keyboard>
       <Tools
         setColor={setColor}

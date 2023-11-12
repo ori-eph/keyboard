@@ -98,7 +98,9 @@ function Keys(props) {
 
   return (
     <>
-      <div id="keyboard-flex">{keyboard}</div>
+      <div className={props.rgbOn ? "ledKeyboard" : ""} id="keyboard-flex">
+        {keyboard}
+      </div>
       <div id="space-line">{spaceLine}</div>
     </>
   );
