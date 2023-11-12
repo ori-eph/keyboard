@@ -9,7 +9,7 @@ export default function Size(props) {
         onChange={(e) => {
           handleSizeChange(e);
         }}
-        value={14}
+        placeholder={14}
         type="number"
         id="Size-picker"
         name="Size=picker"
