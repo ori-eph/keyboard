@@ -4,6 +4,7 @@ import Color from "./components/Color";
 import Size from "./components/Size";
 
 function App() {
+  const [text, setText] = useState("");
   const [color, setColor] = useState("black");
   const [size, setSize] = useState("14px");
 
