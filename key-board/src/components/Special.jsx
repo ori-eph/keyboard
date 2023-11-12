@@ -1,5 +1,7 @@
 import Button from "./Button";
 import React from "react";
+import "../css/keyboard.css";
+
 function Special(props) {
   function upperCaseAll() {
     props.setText((prev) =>

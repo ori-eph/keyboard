@@ -11,6 +11,8 @@ function Keys(props) {
   const style = {
     color: props.color || "black",
     fontSize: props.size + "px" || "18px",
+    fontStyle: props.fontStyle || "normal",
+    fontWeight: props.fontWeight || "normal",
   };
 
   function findLangChars(currentLang) {

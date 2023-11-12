@@ -1,6 +1,8 @@
 import Size from "./Size";
 import Button from "./Button";
 import Color from "./Color";
+import Font from "./Font";
+import "../css/keyboard.css";
 
 function Tools(props) {
   function displayMenu() {
@@ -13,6 +15,12 @@ function Tools(props) {
         <h2>Styling tools</h2>
         <Size size={props.size} setSize={props.setSize} />
         <Color setColor={props.setColor} />
+        <Font
+          fontStyle={props.fontStyle}
+          fontWeight={props.fontWeight}
+          setFontStyle={props.setFontStyle}
+          setFontWeight={props.setFontWeight}
+        />
       </div>
     </>
   );

@@ -7,6 +7,8 @@ import Tools from "./components/Tools";
 function App() {
   const [text, setText] = useState([]);
   const [color, setColor] = useState("black");
+  const [fontStyle, setFontStyle] = useState("normal");
+  const [fontWeight, setFontWeight] = useState("normal");
   const [size, setSize] = useState(18);
   const [lang, setLang] = useState("eng");
   const [upper, setUpper] = useState(false);
@@ -24,6 +26,8 @@ function App() {
         color={color}
         size={size}
         upper={upper}
+        fontStyle={fontStyle}
+        fontWeight={fontWeight}
       ></Keyboard>
       <Tools
         setColor={setColor}
@@ -31,6 +35,10 @@ function App() {
         size={size}
         menu={menu}
         setMenu={setMenu}
+        setFontStyle={setFontStyle}
+        fontStyle={fontStyle}
+        setFontWeight={setFontWeight}
+        fontWeight={fontWeight}
       />
     </>
   );

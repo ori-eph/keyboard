@@ -33,6 +33,8 @@ function Keyboard(props) {
         text={props.text}
         color={props.color}
         size={props.size}
+        fontStyle={props.fontStyle}
+        fontWeight={props.fontWeight}
         lang={currentLang}
         setText={props.setText}
         upper={props.upper}
