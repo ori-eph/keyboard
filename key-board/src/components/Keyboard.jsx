@@ -10,7 +10,11 @@ function Keyboard(props) {
   const [isSpecial, setIsSpecial] = useState(false);
   return (
     <>
-      <UpperLower setUpper={props.setUpper} upper={props.upper} />
+      <UpperLower
+        setUpper={props.setUpper}
+        upper={props.upper}
+        lang={props.lang}
+      />
       <Language
         currentLang={currentLang}
         setLang={props.setLang}

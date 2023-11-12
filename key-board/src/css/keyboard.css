@@ -22,3 +22,10 @@
   height: 2.5em;
   flex: 0 0 50%;
 }
+
+.show {
+  display: inline;
+}
+.hidden {
+  display: none;
+}
