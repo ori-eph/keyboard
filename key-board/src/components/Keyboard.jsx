@@ -11,17 +11,13 @@ function Keyboard(props) {
   return (
     <>
       <UpperLower setUpper={props.setUpper} upper={props.upper} />
-<<<<<<< HEAD
       <Language
         currentLang={currentLang}
         setLang={props.setLang}
         isSpecial={isSpecial}
         setIsSpecial={setIsSpecial}
       />
-=======
-      <Language currentLang={currentLang} setLang={props.setLang} />
       <Special setText={props.setText} />
->>>>>>> df3c1e97312bfb2e0208583dc824207b341d8d11
       <Keys
         color={props.color}
         size={props.size}
