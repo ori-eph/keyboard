@@ -129,3 +129,5 @@ const specialChars = [
 ];
 
 export const lang = { eng, he, emoj, specialChars };
+
+export const fonts = ["system-ui", "Ariel", "Courier", "Monospace", "Georgia"];

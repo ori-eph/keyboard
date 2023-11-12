@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Button from "./Button";
 import { lang } from "../data";
-import "../css/Language.css";
+import "../css/language.css";
 
 export default function Language(props) {
   let langNames = Object.keys(lang);
