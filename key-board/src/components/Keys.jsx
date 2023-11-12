@@ -1,8 +1,8 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { lang } from "../data";
 import Button from "./Button";
 import "../css/keyboard.css";
-import Language from "./Language";
+// import Language from "./Language";
 
 let count = 0;
 

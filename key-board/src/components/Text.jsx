@@ -1,9 +1,9 @@
-import { useState } from "react";
+// import { useState } from "react";
 
 function Text(props) {
   const text = props.text || "";
 
-  return <div>{text}</div>;
+  return <div className="textBox">{text}</div>;
 }
 
 export default Text;
