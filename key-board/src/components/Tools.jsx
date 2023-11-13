@@ -6,9 +6,14 @@ import "../css/keyboard.css";
 import { useState } from "react";
 
 function Tools(props) {
-  const [toolIcon, setToolIcon] = useState("🎨");
+  const [toolIcon, setToolIcon] = useState("🖌▼");
   function displayMenu() {
     props.setMenu((menu) => !menu);
+    if (toolIcon === "🖌▲") {
+      setToolIcon("🖌▼");
+    } else {
+      setToolIcon("🖌▲");
+    }
   }
   return (
     <div className="tools-div">
