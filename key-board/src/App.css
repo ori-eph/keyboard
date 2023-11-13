@@ -41,19 +41,21 @@
   color: #888;
 }
 
-/* body {
-  background-color: rgb(233, 215, 233);
-} */
+body {
+  background-color: rgb(255, 247, 255);
+}
 
-/*
 .textBox {
+  align-items: baseline;
   display: flex;
   flex-wrap: wrap;
   background-color: white;
   width: 80%;
-  height: 20vh;
-  overflow-x: auto;
+  height: 35vh;
+  overflow-y: auto;
+  overflow-x: hidden;
   margin: auto;
-  border-radius: 4%;
+  border-radius: 10px;
+  border: 2px solid #888;
+  white-space: pre-wrap;
 }
-*/
