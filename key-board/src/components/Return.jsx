@@ -13,7 +13,7 @@ function Return(props) {
   }
   return (
     <Button
-      className="key"
+      className="key topKey"
       value="↩"
       onClick={goBackStep}
       disabled={props.returnArr.length ? false : true}
