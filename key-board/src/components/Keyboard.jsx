@@ -11,6 +11,7 @@ function Keyboard(props) {
   const currentLang = props.lang || "eng";
   const [isSpecial, setIsSpecial] = useState(false);
   const [returnArr, setReturnArr] = useState([]);
+
   return (
     <>
       <RgbLed rgbOn={props.rgbOn} setRgbOn={props.setRgbOn} />
@@ -37,7 +38,7 @@ function Keyboard(props) {
         size={props.size}
         fontStyle={props.fontStyle}
         fontWeight={props.fontWeight}
-        fontDecoration={props.textDecoration}
+        textDecoration={props.textDecoration}
         fontFam={props.fontFam}
         lang={currentLang}
         setText={props.setText}
