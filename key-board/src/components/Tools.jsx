@@ -3,14 +3,16 @@ import Button from "./Button";
 import Color from "./Color";
 import Font from "./Font";
 import "../css/keyboard.css";
+import { useState } from "react";
 
 function Tools(props) {
+  const [toolIcon, setToolIcon] = useState("🎨");
   function displayMenu() {
     props.setMenu((menu) => !menu);
   }
   return (
-    <div>
-      <Button className="key" value="style the text" onClick={displayMenu} />
+    <div className="tools-div">
+      <Button className="key tool-btn" value={toolIcon} onClick={displayMenu} />
       <div
         style={props.menu ? { display: "block" } : { display: "none" }}
         className="tools"
