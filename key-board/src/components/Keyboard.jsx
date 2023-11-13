@@ -5,6 +5,7 @@ import Keys from "./Keys";
 import UpperLower from "./UpperLower";
 import Special from "./Special";
 import Return from "./Return";
+import RgbLed from "./RgbLed";
 
 function Keyboard(props) {
   const currentLang = props.lang || "eng";
@@ -12,6 +13,7 @@ function Keyboard(props) {
   const [returnArr, setReturnArr] = useState([]);
   return (
     <>
+      <RgbLed rgbOn={props.rgbOn} setRgbOn={props.setRgbOn} />
       <UpperLower
         setUpper={props.setUpper}
         upper={props.upper}
@@ -36,11 +38,13 @@ function Keyboard(props) {
         fontStyle={props.fontStyle}
         fontWeight={props.fontWeight}
         fontDecoration={props.textDecoration}
+        fontFam={props.fontFam}
         lang={currentLang}
         setText={props.setText}
         upper={props.upper}
         isSpecial={isSpecial}
         setReturnArr={setReturnArr}
+        rgbOn={props.rgbOn}
       />
     </>
   );

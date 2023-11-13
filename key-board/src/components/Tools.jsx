@@ -16,8 +16,10 @@ function Tools(props) {
         <Size size={props.size} setSize={props.setSize} />
         <Color setColor={props.setColor} />
         <Font
+          fontFam={props.fontFam}
           fontStyle={props.fontStyle}
           fontWeight={props.fontWeight}
+          setFontFam={props.setFontFam}
           setFontStyle={props.setFontStyle}
           setFontWeight={props.setFontWeight}
           textDecoration={props.textDecoration}

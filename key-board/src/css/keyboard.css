@@ -15,7 +15,7 @@
 
 .key {
   flex: 0 0 calc(100% / 8);
-  border: 1.5px solid rgb(138, 128, 128);
+  border: 2px solid rgb(138, 128, 128);
 }
 
 .space {
@@ -28,4 +28,46 @@
 }
 .hidden {
   display: none;
+}
+
+@keyframes rainbow {
+  0% {
+    text-shadow: 0px 1px 4px red;
+    border-color: red;
+  }
+  14% {
+    text-shadow: 0px 1px 4px orange;
+    border-color: orange;
+  }
+  28% {
+    text-shadow: 0px 1px 4px rgb(221, 221, 14);
+    border-color: rgb(221, 221, 14);
+  }
+  42% {
+    text-shadow: 0px 1px 4px lime;
+    border-color: lime;
+  }
+  57% {
+    text-shadow: 0px 1px 4px blue;
+    border-color: blue;
+  }
+  71% {
+    text-shadow: 0px 1px 4px indigo;
+    border-color: indigo;
+  }
+  85% {
+    text-shadow: 0px 1px 4px violet;
+    border-color: violet;
+  }
+  100% {
+    text-shadow: 0px 1px 4px red;
+    border-color: red;
+  }
+}
+
+.ledKeyboard > button {
+  text-shadow: 0px 1px 4px rgb(0, 0, 0);
+  border: 2px solid;
+  color: rgba(0, 0, 0, 0.716);
+  animation: rainbow 5s linear infinite;
 }

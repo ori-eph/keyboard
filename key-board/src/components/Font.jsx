@@ -1,5 +1,6 @@
 import Button from "./Button";
 import "../css/keyboard.css";
+import { fonts } from "../data";
 
 export default function Font(props) {
   function handleFontStyleChange(e) {
@@ -18,6 +19,10 @@ export default function Font(props) {
     props.textDecoration !== e
       ? props.setTextDecoration(e)
       : props.setTextDecoration("none");
+  }
+
+  function handleFontFamChange(e) {
+    props.setFontFam(e.target.value);
   }
 
   return (
@@ -40,6 +45,18 @@ export default function Font(props) {
         style={{ textDecoration: "underline" }}
         onClick={() => handleTextDecorationChange("underline")}
       />
+      <label htmlFor="fontFam">font:</label>
+      <select
+        name="fontFam"
+        id="fontFam"
+        onChange={(e) => handleFontFamChange(e)}
+      >
+        {fonts.map((font) => (
+          <option value={font} key={font}>
+            {font}
+          </option>
+        ))}
+      </select>
     </div>
   );
 }

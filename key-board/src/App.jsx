@@ -10,10 +10,12 @@ function App() {
   const [fontStyle, setFontStyle] = useState("normal");
   const [fontWeight, setFontWeight] = useState("normal");
   const [textDecoration, setTextDecoration] = useState("none");
+  const [fontFam, setFontFam] = useState("system-ui");
   const [size, setSize] = useState(18);
   const [lang, setLang] = useState("eng");
   const [upper, setUpper] = useState(false);
   const [menu, setMenu] = useState(false);
+  const [rgbOn, setRgbOn] = useState(false);
 
   return (
     <>
@@ -22,22 +24,27 @@ function App() {
         setText={setText}
         setUpper={setUpper}
         setLang={setLang}
+        setRgbOn={setRgbOn}
         text={text}
         lang={lang}
         color={color}
         size={size}
         upper={upper}
+        rgbOn={rgbOn}
         fontStyle={fontStyle}
         fontWeight={fontWeight}
         textDecoration={textDecoration}
+        fontFam={fontFam}
       ></Keyboard>
       <Tools
+        setFontFam={setFontFam}
         setColor={setColor}
         setSize={setSize}
         size={size}
         menu={menu}
         setMenu={setMenu}
         setFontStyle={setFontStyle}
+        fontFam={fontFam}
         fontStyle={fontStyle}
         setFontWeight={setFontWeight}
         fontWeight={fontWeight}

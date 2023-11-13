@@ -14,6 +14,7 @@ function Keys(props) {
     fontStyle: props.fontStyle || "normal",
     fontWeight: props.fontWeight || "normal",
     textDecoration: props.textDecoration || "none",
+    fontFamily: props.fontFam || "system-ui",
   };
 
   function findLangChars(currentLang) {
@@ -101,7 +102,9 @@ function Keys(props) {
 
   return (
     <>
-      <div id="keyboard-flex">{keyboard}</div>
+      <div className={props.rgbOn ? "ledKeyboard" : ""} id="keyboard-flex">
+        {keyboard}
+      </div>
       <div id="space-line">{spaceLine}</div>
     </>
   );
