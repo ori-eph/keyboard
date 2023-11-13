@@ -4,8 +4,8 @@ export default function Size(props) {
     props.setSize(size);
   }
   return (
-    <div className="Size">
-      <label htmlFor="Size-picker">Font size:</label>
+    <div className="Size tool">
+      <label htmlFor="Size-picker">Font size: &nbsp;</label>
       <input
         onChange={(e) => {
           handleSizeChange(e);

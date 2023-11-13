@@ -3,8 +3,8 @@ export default function Color(props) {
     props.setColor(e.target.value);
   }
   return (
-    <div className="color">
-      <label htmlFor="color-picker">Text color:</label>
+    <div className="color tool">
+      <label htmlFor="color-picker">Text color: &nbsp;</label>
       <input
         onChange={(e) => {
           handleColorChange(e);

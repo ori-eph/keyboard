@@ -26,26 +26,8 @@ export default function Font(props) {
   }
 
   return (
-    <div className="Font">
-      <Button
-        value="bold"
-        className="key"
-        style={{ fontWeight: "bold" }}
-        onClick={() => handleFontWeightChange("bold")}
-      />
-      <Button
-        value="italic"
-        className="key"
-        style={{ fontStyle: "italic" }}
-        onClick={() => handleFontStyleChange("italic")}
-      />
-      <Button
-        value="underline"
-        className="key"
-        style={{ textDecoration: "underline" }}
-        onClick={() => handleTextDecorationChange("underline")}
-      />
-      <label htmlFor="fontFam">font:</label>
+    <div className="Font tool">
+      <label htmlFor="fontFam">font: &nbsp;</label>
       <select
         name="fontFam"
         id="fontFam"
@@ -57,6 +39,26 @@ export default function Font(props) {
           </option>
         ))}
       </select>
+      <br />
+      <br />
+      <Button
+        value="bold"
+        className="key fontKey"
+        style={{ fontWeight: "bold" }}
+        onClick={() => handleFontWeightChange("bold")}
+      />
+      <Button
+        value="italic"
+        className="key fontKey"
+        style={{ fontStyle: "italic" }}
+        onClick={() => handleFontStyleChange("italic")}
+      />
+      <Button
+        value="underline"
+        className="key fontKey"
+        style={{ textDecoration: "underline" }}
+        onClick={() => handleTextDecorationChange("underline")}
+      />
     </div>
   );
 }

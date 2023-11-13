@@ -13,6 +13,20 @@
   margin-top: 0.5vw;
 }
 
+.tool {
+  margin: 1vh;
+}
+
+.fontKey {
+  margin: 0.3vw;
+}
+
+.tools {
+  border-radius: 10px;
+  border: 2px solid rgb(138, 128, 128);
+  width: fit-content;
+}
+
 .key {
   flex: 0 0 calc(100% / 8);
   border: 2px solid rgb(138, 128, 128);

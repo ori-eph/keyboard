@@ -9,9 +9,12 @@ function Tools(props) {
     props.setMenu((menu) => !menu);
   }
   return (
-    <>
+    <div>
       <Button className="key" value="style the text" onClick={displayMenu} />
-      <div style={props.menu ? { display: "block" } : { display: "none" }}>
+      <div
+        style={props.menu ? { display: "block" } : { display: "none" }}
+        className="tools"
+      >
         <h2>Styling tools</h2>
         <Size size={props.size} setSize={props.setSize} />
         <Color setColor={props.setColor} />
@@ -26,7 +29,7 @@ function Tools(props) {
           setTextDecoration={props.setTextDecoration}
         />
       </div>
-    </>
+    </div>
   );
 }
 
