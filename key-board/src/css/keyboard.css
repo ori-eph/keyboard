@@ -25,6 +25,16 @@
   border-radius: 10px;
   border: 2px solid rgb(138, 128, 128);
   width: fit-content;
+  background-color: rgb(242 227 255);
+  position: absolute;
+  top: 58%;
+  left: 3%;
+}
+
+.tool-btn {
+  position: absolute;
+  top: 50%;
+  left: 3%;
 }
 
 .key {
