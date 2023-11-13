@@ -4,7 +4,13 @@ function RgbLed(props) {
   function turnRgb() {
     props.setRgbOn((prev) => !prev);
   }
-  return <Button value={props.rgbOn ? "on" : "off"} onClick={turnRgb} />;
+  return (
+    <Button
+      className="key"
+      value={props.rgbOn ? "on" : "off"}
+      onClick={turnRgb}
+    />
+  );
 }
 
 export default RgbLed;

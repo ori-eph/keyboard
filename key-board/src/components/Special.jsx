@@ -22,9 +22,9 @@ function Special(props) {
   }
   return (
     <div>
-      <Button value={"⬆ALL"} onClick={upperCaseAll} />
-      <Button value={"⇩ALL"} onClick={lowerCaseAll} />
-      <Button value={"🧹"} onClick={clearText} />
+      <Button className="key" value={"⬆ALL"} onClick={upperCaseAll} />
+      <Button className="key" value={"⇩ALL"} onClick={lowerCaseAll} />
+      <Button className="key" value={"🧹"} onClick={clearText} />
     </div>
   );
 }
