@@ -14,6 +14,12 @@ export default function Font(props) {
       : props.setFontWeight("normal");
   }
 
+  function handleTextDecorationChange(e) {
+    props.textDecoration !== e
+      ? props.setTextDecoration(e)
+      : props.setTextDecoration("none");
+  }
+
   return (
     <div className="Font">
       <Button
@@ -27,6 +33,12 @@ export default function Font(props) {
         className="key"
         style={{ fontStyle: "italic" }}
         onClick={() => handleFontStyleChange("italic")}
+      />
+      <Button
+        value="underline"
+        className="key"
+        style={{ textDecoration: "underline" }}
+        onClick={() => handleTextDecorationChange("underline")}
       />
     </div>
   );

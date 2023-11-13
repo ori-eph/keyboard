@@ -13,6 +13,7 @@ function Keys(props) {
     fontSize: props.size + "px" || "18px",
     fontStyle: props.fontStyle || "normal",
     fontWeight: props.fontWeight || "normal",
+    textDecoration: props.textDecoration || "none",
   };
 
   function findLangChars(currentLang) {

@@ -9,6 +9,7 @@ function App() {
   const [color, setColor] = useState("black");
   const [fontStyle, setFontStyle] = useState("normal");
   const [fontWeight, setFontWeight] = useState("normal");
+  const [textDecoration, setTextDecoration] = useState("none");
   const [size, setSize] = useState(18);
   const [lang, setLang] = useState("eng");
   const [upper, setUpper] = useState(false);
@@ -28,6 +29,7 @@ function App() {
         upper={upper}
         fontStyle={fontStyle}
         fontWeight={fontWeight}
+        textDecoration={textDecoration}
       ></Keyboard>
       <Tools
         setColor={setColor}
@@ -39,6 +41,8 @@ function App() {
         fontStyle={fontStyle}
         setFontWeight={setFontWeight}
         fontWeight={fontWeight}
+        setTextDecoration={setTextDecoration}
+        textDecoration={textDecoration}
       />
     </>
   );

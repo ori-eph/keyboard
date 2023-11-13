@@ -20,6 +20,8 @@ function Tools(props) {
           fontWeight={props.fontWeight}
           setFontStyle={props.setFontStyle}
           setFontWeight={props.setFontWeight}
+          textDecoration={props.textDecoration}
+          setTextDecoration={props.setTextDecoration}
         />
       </div>
     </>
