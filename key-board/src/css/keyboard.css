@@ -42,9 +42,33 @@
   border: 2px solid rgb(138, 128, 128);
 }
 
+.red-key {
+  background-color: red;
+}
+
+.green-key {
+  background-color: green;
+}
+
+.ledKey {
+  border-radius: 50%;
+  width: 6vh;
+  height: 6vh;
+  flex: 0 0 calc(100% / 8);
+  border: 2px solid rgb(82, 76, 76);
+}
+
 .key:hover {
-  /* border: 2.5px solid gray; */
   background-color: rgb(244, 240, 240);
+}
+
+.topKey {
+  margin-left: 0.5vw;
+  color: black;
+}
+
+.specialKey {
+  margin-bottom: 1vh;
 }
 
 .space {
