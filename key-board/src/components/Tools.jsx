@@ -22,6 +22,8 @@ function Tools(props) {
           setFontFam={props.setFontFam}
           setFontStyle={props.setFontStyle}
           setFontWeight={props.setFontWeight}
+          textDecoration={props.textDecoration}
+          setTextDecoration={props.setTextDecoration}
         />
       </div>
     </>

@@ -15,6 +15,12 @@ export default function Font(props) {
       : props.setFontWeight("normal");
   }
 
+  function handleTextDecorationChange(e) {
+    props.textDecoration !== e
+      ? props.setTextDecoration(e)
+      : props.setTextDecoration("none");
+  }
+
   function handleFontFamChange(e) {
     props.setFontFam(e.target.value);
   }
@@ -32,6 +38,12 @@ export default function Font(props) {
         className="key"
         style={{ fontStyle: "italic" }}
         onClick={() => handleFontStyleChange("italic")}
+      />
+      <Button
+        value="underline"
+        className="key"
+        style={{ textDecoration: "underline" }}
+        onClick={() => handleTextDecorationChange("underline")}
       />
       <label htmlFor="fontFam">font:</label>
       <select

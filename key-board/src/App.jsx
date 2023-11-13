@@ -9,6 +9,7 @@ function App() {
   const [color, setColor] = useState("black");
   const [fontStyle, setFontStyle] = useState("normal");
   const [fontWeight, setFontWeight] = useState("normal");
+  const [textDecoration, setTextDecoration] = useState("none");
   const [fontFam, setFontFam] = useState("system-ui");
   const [size, setSize] = useState(18);
   const [lang, setLang] = useState("eng");
@@ -32,6 +33,7 @@ function App() {
         rgbOn={rgbOn}
         fontStyle={fontStyle}
         fontWeight={fontWeight}
+        textDecoration={textDecoration}
         fontFam={fontFam}
       ></Keyboard>
       <Tools
@@ -46,6 +48,8 @@ function App() {
         fontStyle={fontStyle}
         setFontWeight={setFontWeight}
         fontWeight={fontWeight}
+        setTextDecoration={setTextDecoration}
+        textDecoration={textDecoration}
       />
     </>
   );
